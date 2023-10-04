@@ -10,7 +10,8 @@ header {
     background-image: url(./figma/main_visual3.jpg);
 }
 header h1 {
-    text-align: center
+    text-align: center;
+    margin: 0;
 }
 header .mainlogo {
     width: 63px; height: 34px;
@@ -22,9 +23,11 @@ header h2 {
     font-size: 57px;
     line-height: 70px;
     font-weight: bold;
+    margin: 0;
     margin-left: 49px;
 }
 header h2 em {
+    font-style: normal;
     color: #2C55FF;
 }
 header h4 {
@@ -48,16 +51,19 @@ main .title1 {
 main .title1 h3 {
     font-size: 23px;
     color: #3561e8;
+    margin: 0;
     margin-bottom: 20px;
 }
 main .title1 p {
     font-size: 11px;
     line-height: 20px;
     color: #898989;
+    margin: 0;
     margin-bottom: 76px;
 }
 main .title1 ul {
     display: block;
+    padding: 0; margin: 0;
 }
 main .title1 ul li {
     display: inline;
@@ -72,15 +78,52 @@ main .title1 ul .box1 {
 main .title1 ul .box8 {
     width: 532px; height: 532px;
 }
-
 main .title2 {
     height: 663px;
     padding-top: 80px;
     box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+main .title2 .btn1 {
+    position: absolute;
+    bottom: 203px; left: 10px;
+    border: 2px #e6e6e6 solid;
+    width: 47px; height: 47px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+main .title2 .btn2 {
+    position: absolute;
+    bottom: 203px; right: 10px;
+    border: 2px #e6e6e6 solid;
+    width: 47px; height: 47px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+main .title2 ul {
+    padding: 0;
+}
+main .title2 ul li {
+   display: inline;
+}
+main .title2 a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
 }
 main .title2 h3 {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 23px;
+    margin: 0;
 }
 main .title2 p {
     font-family: 'Noto Sans KR', sans-serif;
@@ -111,9 +154,11 @@ main .title3 {
 }
 main .title3 ul {
     display: flex;
+    padding: 0; margin: 0;
 }
 main .title3 ul li {
     width: 314px; height: 502px;
+    display: inline;
 }
 main .title3 ul li a .image1{
     background-image: url(./figma/aside_banner6.jpg);
@@ -130,6 +175,11 @@ main .title3 ul li a .image2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+main .title3 a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
 }
 main .title3 ul li a h4 {
     font-family: 'Noto Sans KR', sans-serif;
@@ -158,6 +208,7 @@ main .title4 {
 }
 main .title4 h3 {
     font-size: 23px;
+    margin: 0;
     margin-bottom: 23px;
 }
 main .title4 p {
@@ -172,7 +223,12 @@ main .title4 a {
     width: 571px; height: 39px;
     background-color: #333333;
     color: #fff;
+    text-decoration: none;
     line-height: 40px;
+    transition-duration: .5s;
+}
+main .title4 a:hover {
+    background-color: #2C55FF;
 }
 footer {
     height: 245px;
